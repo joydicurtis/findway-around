@@ -1,0 +1,57 @@
+.myfellows {
+	display: block;
+	height: 70px;
+	margin: 0 auto 30px;
+    @include breakpoint(medium) {
+        margin-bottom: 60px;
+    }
+}
+.question {
+	display: block;
+	margin: 0 auto;
+	width: 47px;
+	height: 80px;
+	transition: all 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+.question__text {
+	text-align: center;
+}
+.fellows-img {
+	display: table;
+	line-height: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+	img {
+        display: block;
+        margin: 0 auto;
+		vertical-align: middle;
+		transition: transform .5s ease-in-out;
+        height: 60px;
+		&:hover,
+		&:focus {
+			transform: rotate(360deg);
+		}
+	}
+    @include breakpoint(medium) {
+        line-height: 120px;
+    }
+}
+
+@keyframes fellows-fadeIn {
+    0% {
+        transform: rotate(0deg);   
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }   
+    100% {
+        transform: rotate(340deg);
+    }       
+}

@@ -1,0 +1,296 @@
+.section-whereiam {
+	position: relative;
+}
+.whereami {
+	display: block;
+	height: 70px;
+	width: auto;
+	margin: 0 auto;
+}
+.planet {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 75%;
+	@include breakpoint(large) {
+		width: 80%;
+		height: 80%;
+	}
+}
+.superman {
+	display: none;
+	@include breakpoint(medium) {
+		position: absolute;
+        display: block;
+		width: 75px;
+		top: -100px;
+		left: 50%;
+		animation: superman-animate 5s infinite ease-in-out;
+		animation-direction: alternate;
+	}
+}
+.dracula {
+	display: none;
+	@include breakpoint(medium) {
+		position: absolute;
+        display: block;
+		width: 75px;
+		right: 100px;
+		top: 30%;
+		animation: dracula-animate 2s infinite ease-in-out;
+		animation-direction: alternate;
+	}
+}
+.hurrican {
+	display: none;
+	@include breakpoint(medium) {
+		position: absolute;
+        display: block;
+		width: 75px;
+		top: 30%;
+		left: -100px;
+		animation: hurrican-animate 2s infinite ease-in-out;
+		animation-direction: alternate;
+	}
+}
+.earth1 {
+    display: block;
+	position: relative;
+	height: auto;
+    margin: 0 auto;
+    animation: preloaderer 25s infinite linear;
+    @include breakpoint(medium) {
+        margin-top: 110px;
+    }
+}
+.smallmustache {
+
+    @include breakpoint(medium) { 
+
+    }
+}
+[data-aos="smallmustache"] {
+    position: absolute;
+    top: -78px;
+    width: 35px;
+    left: 15px;
+    opacity: 0;
+    @include breakpoint(medium) {
+        top: -130px;
+        width: 60px;
+        left: 110px;
+    }
+    &.aos-animate {
+        transition: all 0.3s ease-in-out;
+        transition-delay: 0.5s;
+        @include breakpoint(medium) {
+            opacity: 1;
+        }
+    }
+} 
+// .earth2 {
+// 	position: absolute;
+// 	width: 100%;
+// 	height: auto;
+// 	animation: preloaderer 25s infinite linear;
+// }
+.playcloud {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+    	transform: translate(-50%,-50%) scale(1.1);
+    	cursor: url(../curpointer.png), url(../curpointer.cur), default;
+    }
+    @include breakpoint(medium) { 
+        width: 300px;
+    }
+}
+.diskoman-block {
+	position: relative;
+    @include breakpoint(medium) {
+   		position: absolute;
+    	top: 700px;
+    }
+}
+[data-aos="diskoman"] {
+    width: 150px;
+    left: 10%;
+    top: -60%;
+    z-index: 1;
+    @include breakpoint(medium) {
+        width: auto;
+        opacity: 0;
+    }
+    &.aos-animate {
+        transition: all 0.1s ease-in-out;
+        transition-delay: 1s;
+        @include breakpoint(medium) {
+            transform: translate(10%, -50%);
+            opacity: 1;
+        }
+    }
+} 
+[data-aos="bigbackpack"] {
+    position: absolute;
+    width: 60px;
+    top: 25px;
+    left: -35px;
+    z-index: 0;
+    @include breakpoint(medium) {
+        left: -30px;
+        top: -205px;
+        width: 157px;
+        height: 357px;
+        opacity: 0;
+    }
+    &.aos-animate {
+        transition: all 0.1s ease-in-out;
+        transition-delay: 1s;
+        @include breakpoint(medium) {
+            transform: translate(0, 30px);
+            opacity: 1;
+        }
+    }
+}
+[data-aos="backpackstripes"] {    
+    position: absolute;
+    width: 60px;
+    top: 50px;
+    left: 15px;
+    z-index: 2;
+    @include breakpoint(medium) { 
+        width: 125px;
+        top: -205px;
+        left: 65px;
+        opacity: 0;
+    }
+    &.aos-animate {
+        transition: all 01s ease-in-out;
+        transition-delay: 1s;
+        @include breakpoint(medium) { 
+            transform: translate(0, 100px);
+            opacity: 1;
+        }
+    }
+}
+// .bigbackpack {
+//     position: relative;
+//     left: -15px;
+//     top: -15px;
+//     width: 60px;
+//     height: auto;
+//     z-index: -1;
+    // @include breakpoint(medium) {
+    //     &[data-aos="bigbackpack"] {
+    //         left: 75px;
+    //         top: -155px;
+    //         width: 157px;
+    //         height: 357px;
+    //         opacity: 0;
+    //         transition-delay: 1s;
+    //         &.aos-animate {
+    //             transform: translate(0, 100px);
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+// }
+// .discoman {
+// 	position: relative;
+// 	z-index: 10;
+// }
+// [data-aos="backpackstripes"] {
+// 	position: relative;
+// 	width: 169px;
+// 	height: 207px;
+// 	opacity: 0;
+// 	z-index: 20;
+//     left: -332px;
+//     top: -226px;
+//     transition-delay: 1s;
+// 	&.aos-animate {
+// 		transform: translate(0, 100px);
+// 		opacity: 1;
+// 	}
+// }
+// .smallmustache {
+// 	position: absolute;
+// 	width: 69px;
+// 	height: 20px;
+//     top: 92px;
+//     left: 232px;
+//     z-index: 50;
+// }
+// .diskoman {
+// 	position: absolute;
+// 	width: 150px;
+// 	left: 0;
+// 	top: 150px;
+// 	@include breakpoint(medium) {
+		// &[data-aos="diskoman"] {
+		// 	bottom: 0;
+		// 	left: -300px;
+		// 	opacity: 0;
+		// 	&.aos-animate {
+		// 		transform: translate(250px, 0);
+		// 		opacity: 1;
+		// 	}
+// 		}
+// 	}
+// }
+
+@keyframes preloader {
+    to { transform: rotate(360deg); }
+}
+@keyframes preloaderer {
+    to { transform: rotate(-360deg); }
+}
+@keyframes superman-animate {
+    0% {
+        transform: translateX(-50%) rotate(-20deg);   
+    } 
+    100% {
+        transform: translateX(50%) rotate(20deg);   
+    }     
+}
+@keyframes dracula-animate {
+    0% {
+        transform: translateX(0px); 
+        opacity: 0;  
+    } 
+    100% {
+        transform: translateX(200px);
+        opacity: 1;
+    }     
+}
+@keyframes hurrican-animate {
+    0% {
+        transform: translateX(0px); 
+    } 
+    100% {
+        transform: translateX(20px);
+    }     
+}
+// @keyframes diskomanwalk {
+//     from { 
+//     	transform: translate(0px, 0px);
+//     	opacity: 0.0;
+//     }
+//     to { 
+//     	transform: translate(400px, 0);
+//     	opacity: 1;
+//     }
+// }
+// @keyframes bigbackpack-fadein {
+//     from { 
+//     	opacity: 0.0;
+//     }
+//     to { 
+//     	transform: translate(0, 100px);
+//     	opacity: 1;
+//     }
+// }

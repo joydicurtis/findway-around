@@ -1,0 +1,385 @@
+.cloud1 {
+	display: none;
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: 389px; 
+	height: 92px;	
+	@include breakpoint(medium) {
+		display: block;
+		animation:first_cloud 12s linear 2s infinite alternate;		
+	}
+}
+.cloud2 {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 8%;
+	width: 155px; 
+	height: 85px;
+	@include breakpoint(medium) {
+		display: block;
+		animation: second_cloud 25s linear 2s infinite alternate;
+	}
+}
+.cloud3 {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 172px; 
+	height: 97px;
+	@include breakpoint(medium) {
+		display: block;
+		animation: third_cloud 17s linear 2s infinite alternate;
+	}
+}
+.findwayaround {
+	display: block;
+	z-index: 1050;
+	width: 100%;
+	margin-bottom: 20px;
+	@include breakpoint(medium) {
+		display: block;
+		position: relative;
+		top: auto;
+		margin: 0 auto;
+		max-width: none;
+		animation: findwayaround-fadeIn 1s ease-in;
+	}
+}
+.teaser__text {
+	font-family: Kurochkalapkoi;
+	font-size: 30px;
+	@include breakpoint(medium) {
+		text-align: center;
+		font-size: 48px;
+		opacity: 0;
+		animation: teaser__text-fadeIn 1s ease-in;	
+		animation-fill-mode: forwards;
+		animation-delay: 0.6s;
+	}
+}
+.backpack-block {
+	position: relative;
+	display: block;
+	margin-top: 100px;
+	text-align: right;
+	max-width: 290px;
+	float: right;
+	@include breakpoint(medium) {
+		max-width: none;
+		margin-top: 0px;
+		float: none;
+	}
+}
+.backpack {
+	position: relative;
+}
+[data-aos="hutsuls"] {
+	position: absolute;
+	top: -40px;
+	right: 10px;
+	width: 81px;
+	height: 106px;
+	@include breakpoint(medium) {
+		top: -104px;
+		right: -25px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(-225px, 70px) rotate(-360deg);
+			opacity: 1;
+			transition: all 3s;
+		}
+	}
+}
+[data-aos="camera"] {
+	position: absolute;
+	top: 15px;
+	right: 70px;
+	width: 102px;
+	height: 104px;
+	@include breakpoint(medium) {
+		top: -104px;
+		right: -25px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(-250px, 150px) rotate(-40deg);
+			opacity: 1;
+			transition: all 1s;
+			transition-delay: 0.3s;
+		}
+	}
+}
+[data-aos="unicorn"] {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 95px;
+	height: 103px;
+	@include breakpoint(medium) {
+		top: -104px;
+		right: -25px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(-100px, 70px) rotate(240deg);
+			transition-delay: 0.6s;
+			opacity: 1;
+			transition: all 1s;
+		}
+	}
+}
+[data-aos="route66"] {
+	position: absolute;
+	top: -50px;
+	right: 100px;
+	width: 96px;
+	height: 101px;
+	@include breakpoint(medium) {
+		top: -101px;
+		right: -24px;
+		opacity: 0;
+		animation: route-down 0.5s linear;
+		&.aos-animate {
+			transform: translate(-270px, 100px) rotate(380deg);
+			transition-delay: 0.9s;
+			opacity: 1;
+			transition: all 1s;
+		}
+	}
+}
+[data-aos="hurricane"] {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	width: 113px;
+	height: 102px;
+	@include breakpoint(medium) {
+		top: -51px;
+		left: -27px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(80px, 70px) rotate(320deg);
+			opacity: 1;
+			transition: all 1s;
+		}
+	}
+}
+[data-aos="carpet"] {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 171px;
+	height: 99px;
+	@include breakpoint(medium) {
+		top: -50px;
+		left: -42px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(100px, 110px) rotate(340deg);
+			opacity: 1;
+			transition-delay: 0.3s;
+			transition: all 1s;
+		}
+	}
+}
+[data-aos="sneakers"] {
+	position: absolute;
+	top: 0px;
+	right: 45px;
+	width: 139px;
+	height: 102px;
+	@include breakpoint(medium) {
+		top: -51px;
+		left: -35px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(270px, 90px) rotate(350deg);
+			opacity: 1;
+			transition-delay: 0.6s;
+			transition: all 1s;
+		}
+	}
+}
+[data-aos="tent"] {
+	position: absolute;
+	top: -51px;
+	right: 0px;
+	width: 150px;
+	height: 102px;
+	@include breakpoint(medium) {
+		top: -51px;
+		left: -37px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(260px, 30px) rotate(360deg);
+			opacity: 1;
+			transition-delay: 0.9s;
+			transition: all 1s;
+		}
+	}	
+}
+[data-aos="chewbacca"] {
+	position: absolute;
+	top: 0px;
+	left: 115px;
+	width: 62px;
+	height: 102px;
+	@include breakpoint(medium) {
+		top: -51px;
+		left: -15px;
+		opacity: 0;
+		&.aos-animate {
+			transform: translate(230px, 80px) rotate(360deg);
+			opacity: 1;
+			transition-delay: 0.9s;
+			transition: all 1s;
+		}
+	}
+}
+
+@keyframes first_cloud {
+	from {
+		left:0px;
+	}
+	to {
+		left:200px;
+	}
+}
+@keyframes second_cloud	{
+	from {
+		left:50%;
+	}
+	50% {
+		left:100px;
+	}
+}
+@keyframes third_cloud {
+	0%   {right:7%;}
+	100% {right:200px;}
+}
+
+@keyframes findwayaround-fadeIn {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0.0;       
+    }
+    25% {
+        transform: scale(0.25) rotate(90deg);
+    }
+    75% {
+        transform: scale(0.75) rotate(270deg);
+        opacity: 1; 
+    }   
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1; 
+    }       
+}
+@keyframes teaser__text-fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;       
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1; 
+    }   
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+// @keyframes hutsuls-down {
+// 	0% {
+// 		transform: translate(0, -55px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(-220px, 90px) rotate(360deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes camera-down {
+// 	0% {
+// 		transform: translate(0, 0) rotate(320deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(-250px, 150px) rotate(-40deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes tent-down {
+// 	0% {
+// 		transform: translate(0, -35px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(260px, 30px) rotate(360deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes unicorn-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(300px, 40px) rotate(240deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes route-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(-270px, 100px) rotate(380deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes hurricane-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(80px, 70px) rotate(320deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes carpet-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(100px, 110px) rotate(340deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes sneakers-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(270px, 90px) rotate(350deg);
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes chewbacca-down {
+// 	0% {
+// 		transform: translate(-103px, 24px) rotate(0deg);
+// 		opacity: 0.0;
+// 	}
+// 	100% {
+// 		transform: translate(230px, 80px) rotate(360deg);
+// 		opacity: 1;
+// 	}
+// }

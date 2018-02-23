@@ -1,0 +1,70 @@
+.yesyoucan {
+	display: block;
+	height: 55px;
+	margin: 0 auto 60px;
+	@include breakpoint(medium) {
+		height: 70px;
+	}
+}
+.donut-section {
+	text-align: center;
+}
+.donut {
+	display: block;
+	margin: 0 auto 30px;
+	width: 142px;
+	height: 130px;
+	transition: all 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+.host {
+	display: block;
+	margin: 0 auto 30px;
+	width: 229px;
+	height: 130px;
+	transition: all 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+.plane {
+	display: block;
+	margin: 0 auto 30px;
+	width: 184px;
+	height: 130px;
+	transition: all 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+.dntbtn {
+	display: block;
+	margin: 0 auto 30px;
+	width: 262px;
+	height: 67px;
+	transition: all 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+}
+.hungryheadtop,
+.hungryheadbottom {
+	display: none;
+	@include breakpoint (medium) {
+		display: block;
+	}
+}
+.topper {
+    transform: translateY(-30px);
+    transition: all 0.3s ease-in-out;
+}
+.bottomer {
+    transform: translateY(30px);
+    transition: all 0.3s ease-in-out;
+}

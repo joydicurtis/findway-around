@@ -1,0 +1,57 @@
+/*---Global Reset---*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { padding: 0;  border: 0;  vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+html, body { margin: 0;  padding: 0;  width: 100%;  height: 100%; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: '';  content: none; }
+table { border-collapse: collapse;  border-spacing: 0; }
+fieldset { -webkit-padding-start: 0px;  -moz-padding-start: 0px;  -webkit-padding-start: 0px;  -khtml-padding-start: 0x;  -o-padding-start: 0px;  -webkit-margin-start: 0px;  -moz-margin-start: 0px;  -webkit-margin-start: 0px;  -khtml-margin-start: 0px;  -o-margin-start: 0px; }
+input[type="radio"], input[type="checkbox"] { margin: 0; }
+a:focus { outline: none;  text-decoration: none; }
+table { border-collapse: collapse; }
+table th { text-align: left; }
+form, ol, ul, p { margin: 0; }
+ol, ul { padding: 0; }
+li { list-style: none; }
+object { width: 100%; }
+input::-moz-focus-inner { border: 0;  padding: 0;  margin-top: 0px; margin-bottom: 0px; }
+iframe { border: none;  width: 100%; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0;
+}
+
+p {
+    margin-top: 20px;
+}
+@font-face { 
+    font-family: Kurochkalapkoi;  
+    src: url(../fonts/Kurochkalapkoi.otf);  
+    src: url(../fonts/Kurochkalapkoi.ttf) format("truetype"),  
+    url(../fonts/Kurochkalapkoi.woff) format("woff");  
+    font-weight: 400; 
+}
+html, body {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: url(../cursor.png), url(../cursor.cur), default;
+}
+
+body {
+    background: #ffcc00;
+    font-family: Kurochkalapkoi;
+    font-weight: 500;
+    color: #000;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    cursor: url(../curpointer.png), url(../curpointer.cur), default;
+}
+img {
+    max-width: 100%;
+}
